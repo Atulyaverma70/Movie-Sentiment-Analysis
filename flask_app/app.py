@@ -75,7 +75,7 @@ dagshub.init(repo_owner='Atulyaverma70', repo_name='Capstone_project', mlflow=Tr
 
 # Below code block is for production use
 # -------------------------------------------------------------------------------------
-# Set up DagsHub credentials for MLflow tracking
+# # Set up DagsHub credentials for MLflow tracking
 # dagshub_token = os.getenv("CAPSTONE_TEST")
 # if not dagshub_token:
 #     raise EnvironmentError("CAPSTONE_TEST environment variable is not set")
@@ -112,30 +112,18 @@ PREDICTION_COUNT = Counter(
 
 # ------------------------------------------------------------------------------------------
 # Model and vectorizer setup
-client = mlflow.MlflowClient()
+model_name = "my_model"
+def get_latest_model_version(model_name):
+    client = mlflow.MlflowClient()
+    latest_version = client.get_latest_versions(model_name, stages=["Production"])
+    if not latest_version:
+        latest_version = client.get_latest_versions(model_name, stages=["None"])
+    return latest_version[0].version if latest_version else None
 
-registered_models = client.search_registered_models()
-
-if not registered_models:
-    raise Exception("No registered models found in MLflow Registry")
-
-# Automatically fetch first model
-model_name = registered_models[0].name
-
-# Get latest model version
-latest_versions = client.get_latest_versions(model_name)
-
-if not latest_versions:
-    raise Exception(f"No versions found for model: {model_name}")
-
-model_version = latest_versions[0].version
-
-model_uri = f"models:/{model_name}/{model_version}"
-
+model_version = get_latest_model_version(model_name)
+model_uri = f'models:/{model_name}/{model_version}'
 print(f"Fetching model from: {model_uri}")
-
 model = mlflow.pyfunc.load_model(model_uri)
-
 vectorizer = pickle.load(open('models/vectorizer.pkl', 'rb'))
 
 # Routes
