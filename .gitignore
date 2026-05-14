@@ -3,3 +3,5 @@ local_s3/
 /notbook/IMDB.csvcred.txt
 local_s3/
 notebook/IMDB.csv
+data/
+models/

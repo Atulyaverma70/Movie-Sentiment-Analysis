@@ -1,0 +1,4 @@
+[ 2026-05-14 01:45:19,501 ] root - ERROR - Failed to parse the CSV file: Error tokenizing data. C error: Expected 1 fields in line 38, saw 2
+
+[ 2026-05-14 01:45:19,502 ] root - ERROR - Failed to complete the data ingestion process: Error tokenizing data. C error: Expected 1 fields in line 38, saw 2
+

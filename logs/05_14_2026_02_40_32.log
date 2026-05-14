@@ -1,0 +1,8 @@
+[ 2026-05-14 02:40:35,471 ] httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-05-14 02:40:35,486 ] dagshub - INFO - Accessing as Atulyaverma70
+[ 2026-05-14 02:40:37,502 ] httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/Atulyaverma70/Capstone_project.mlflow "HTTP/1.1 200 OK"
+[ 2026-05-14 02:40:38,439 ] httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-05-14 02:40:38,462 ] dagshub - INFO - Initialized MLflow to track repo "Atulyaverma70/Capstone_project.mlflow"
+[ 2026-05-14 02:40:38,465 ] dagshub - INFO - Repository Atulyaverma70/Capstone_project.mlflow initialized!
+[ 2026-05-14 02:40:41,105 ] root - ERROR - Error during model registration: Unable to find a logged_model with artifact_path model under run 3b2c18afec0e4f20af16d5a715348783
+[ 2026-05-14 02:40:41,105 ] root - ERROR - Failed to complete the model registration process: Unable to find a logged_model with artifact_path model under run 3b2c18afec0e4f20af16d5a715348783

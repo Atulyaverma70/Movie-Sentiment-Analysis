@@ -1,0 +1,7 @@
+[ 2026-05-15 00:46:10,673 ] httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-05-15 00:46:10,682 ] dagshub - INFO - Accessing as Atulyaverma70
+[ 2026-05-15 00:46:11,571 ] httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/Atulyaverma70/Capstone_project "HTTP/1.1 200 OK"
+[ 2026-05-15 00:46:12,404 ] httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-05-15 00:46:12,412 ] dagshub - INFO - Initialized MLflow to track repo "Atulyaverma70/Capstone_project"
+[ 2026-05-15 00:46:12,414 ] dagshub - INFO - Repository Atulyaverma70/Capstone_project initialized!
+[ 2026-05-15 00:46:14,778 ] root - INFO - Model my_model version 3 registered successfully.

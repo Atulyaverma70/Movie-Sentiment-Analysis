@@ -1,0 +1,10 @@
+[ 2026-05-14 03:06:00,071 ] httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-05-14 03:06:00,100 ] dagshub - INFO - Accessing as Atulyaverma70
+[ 2026-05-14 03:06:01,090 ] httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/Atulyaverma70/Capstone_project "HTTP/1.1 200 OK"
+[ 2026-05-14 03:06:02,007 ] httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-05-14 03:06:02,026 ] dagshub - INFO - Initialized MLflow to track repo "Atulyaverma70/Capstone_project"
+[ 2026-05-14 03:06:02,028 ] dagshub - INFO - Repository Atulyaverma70/Capstone_project initialized!
+[ 2026-05-14 03:06:04,296 ] root - INFO - Model loaded from ./models/model.pkl
+[ 2026-05-14 03:06:04,299 ] root - INFO - Data loaded from ./data/processed/test_bow.csv
+[ 2026-05-14 03:06:04,307 ] root - INFO - Model evaluation metrics calculated
+[ 2026-05-14 03:06:04,308 ] root - INFO - Metrics saved to reports/metrics.json
