@@ -1,0 +1,7 @@
+[ 2026-05-16 23:58:51,719 ] root - INFO - Data loaded and NaNs filled from ./data/interim/train_processed.csv
+[ 2026-05-16 23:58:51,746 ] root - INFO - Data loaded and NaNs filled from ./data/interim/test_processed.csv
+[ 2026-05-16 23:58:51,747 ] root - INFO - Applying BOW...
+[ 2026-05-16 23:58:51,885 ] root - INFO - Bag of Words applied and data transformed
+[ 2026-05-16 23:58:51,896 ] root - INFO - Data saved to ./data\processed\train_bow.csv
+[ 2026-05-16 23:58:51,902 ] root - INFO - Data saved to ./data\processed\test_bow.csv
+[ 2026-05-16 23:58:51,902 ] root - INFO - Feature engineering completed successfully

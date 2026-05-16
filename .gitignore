@@ -4,3 +4,4 @@ local_s3/
 local_s3/
 notebook/IMDB.csv
 models/
+data/
